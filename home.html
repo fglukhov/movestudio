@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Move Studio</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+  </head>
+  <body>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="sm-indicator"></div>
+      <header>
+        <div class="container">
+          <div class="header-content">
+            <div class="header-logo"><a href="#"><img src="images/logo.svg"></a></div>
+            <div class="header-top">
+              <div class="row">
+                <div class="header-col header-col-top-l">
+                  <div class="header-register"><a class="btn-order" href="#" data-toggle="modal" data-target="#registerModal">Пробное занятие</a></div>
+                </div>
+                <div class="header-col header-col-top-r">
+                  <div class="header-controls">
+                    <div class="row">
+                      <div class="header-controls-l">
+                        <div class="header-lang">
+                          <ul class="lang-selector">
+                            <li><a href="#">en</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="header-controls-r">
+                        <div class="header-contacts">
+                          <div class="header-button"><a class="btn-inline" href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a></div>
+                          <div class="header-phone"><a href="tel: +7 (495) 111-11-11">+7 (495) 111-11-11</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-bottom">
+              <div class="navbar-trigger"><span></span><span></span><span></span></div>
+              <div class="navbar-wrapper">
+                <div class="row">
+                  <div class="header-col navbar-col-l">
+                    <ul class="nav navbar-nav">
+                      <li data-submenu="#submenuAbout"><a href="#">О&nbsp;нас</a></li>
+                      <li data-submenu="#submenuClasses"><a href="#">Классы</a></li>
+                      <li><a href="#">Преподаватели</a></li>
+                    </ul>
+                  </div>
+                  <div class="header-col navbar-col-r">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#">Расписание</a></li>
+                      <li><a href="#">Цены</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header-contacts header-contacts-mob">
+                  <div class="header-button"><a class="btn-inline" href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a></div>
+                  <div class="header-phone"><a href="tel: +7 (495) 111-11-11">+7 (495) 111-11-11</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="submenu" id="submenuAbout">
+          <div class="container">
+            <ul class="classes-menu">
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-1.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>О студии</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-2.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Блог</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-3.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Видео уроки</p>
+                  </div></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="submenu" id="submenuClasses">
+          <div class="container">
+            <ul class="classes-menu">
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-1.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Женские практики</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-2.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Инь-йога</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-3.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Хатха-йога</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-4.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Дживамукти йога</p>
+                  </div></a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="page-wrapper">
+          <!-- Main slider-->
+          <div class="slider-wrapper main-slider-wrapper">
+            <div class="main-slider slider-countable">
+              <div class="slide">
+                <div class="main-slide" style="background-image: url(files/main-slide-1.jpg);">
+                  <div class="container">
+                    <div class="slide-descr">
+                      <div class="sup-ttl">Мастер-класс</div>
+                      <h2>Хатха-йога от&nbsp;Василисы Ивановой</h2>
+                      <div class="watch-link-wrapper"><a class="watch-link" href="#">
+                          <div class="watch-link-ico"><img class="svg-inline" src="images/ico-timetable-link.svg"></div><span>Смотреть</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="main-slide" style="background-image: url(files/main-slide-2.jpg);">
+                  <div class="container">
+                    <div class="slide-descr">
+                      <div class="sup-ttl">Мастер-класс</div>
+                      <h2>Второй слайд</h2>
+                      <div class="watch-link-wrapper"><a class="watch-link" href="#">
+                          <div class="watch-link-ico"><img class="svg-inline" src="images/ico-timetable-link.svg"></div><span>Смотреть</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Main slider END-->
+          <div class="page-body page-body-home">
+            <!-- О Move Studio-->
+            <div class="section section-home section-about">
+              <div class="container">
+                <div class="section-content">
+                  <div class="section-content-inner">
+                    <div class="section-header">
+                      <h2>О&nbsp;Move Studio</h2>
+                    </div>
+                    <div class="video-tmb video-tmb-big"><a class="video-tmb-pic" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="video_gal"><img src="files/video-poster-about.jpg">
+                        <div class="play-button"></div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- О Move Studio END-->
+            <!-- Move-->
+            <div class="section section-home section-move">
+              <div class="container">
+                <div class="section-content">
+                  <div class="section-content-inner">
+                    <div class="move-wrapper">
+                      <div class="move-pics">
+                        <div class="move-col">
+                          <div class="move-pic move-pic-1"><img src="images/move-1.png"></div>
+                        </div>
+                        <div class="move-col">
+                          <div class="move-circle"><img src="images/move-circle.svg"></div>
+                          <div class="move-logo"><img src="images/move-logo.svg"></div>
+                          <div class="move-pic move-pic-2"><img src="images/move-2.png"></div>
+                        </div>
+                        <div class="move-col">
+                          <div class="move-pic move-pic-3"><img src="images/move-3.png"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Move END-->
+            <!-- Квиз-->
+            <div class="section section-home section-poll">
+              <div class="section-content">
+                <div class="section-content-inner">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-xl-8 offset-xl-2">
+                        <div class="poll-wrapper">
+                          <div class="poll-intro">
+                            <h3>Как выбрать йогу, которой я хочу заниматься?</h3>
+                            <div class="poll-intro-button">
+                              <div class="btn btn-2">Пройти тест</div>
+                            </div>
+                          </div>
+                          <form class="form-alt poll-form" id="pollForm">
+                            <div class="poll-form-step">
+                              <div class="poll-step-content">
+                                <div class="poll-step-content-inner">
+                                  <div class="poll-step-num"><span class="cur">01</span> <span class="sep">/</span> <span class="total">08</span></div>
+                                  <div class="poll-question">
+                                    <div class="h3">Первый вопрос, чекбоксы</div>
+                                    <div class="form-checkboxes">
+                                      <div class="row">
+                                        <div class="col">
+                                          <div class="form-checkbox">
+                                            <input id="poll_1_1" type="checkbox" name="poll_1_1">
+                                            <label for="poll_1_1">Вариант ответа 1</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-checkbox">
+                                            <input id="poll_1_2" type="checkbox" name="poll_1_2">
+                                            <label for="poll_1_2">Вариант ответа 2 с очень длинным вопросом</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-checkbox">
+                                            <input id="poll_1_3" type="checkbox" name="poll_1_3">
+                                            <label for="poll_1_3">В&nbsp;разработке (продукт не&nbsp;готов к&nbsp;продажам)</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-checkbox">
+                                            <input id="poll_1_4" type="checkbox" name="poll_1_4">
+                                            <label for="poll_1_4">Минимальная версия продукта (MVP) готова, продажи не&nbsp;начаты</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-checkbox-text">
+                                            <div class="form-checkbox">
+                                              <input id="poll_1_5" type="checkbox" name="poll_1_5" value="other">
+                                              <label for="poll_1_5">Другое</label>
+                                            </div>
+                                            <div class="form-text">
+                                              <div class="form-group form-group-alt form-group-other">
+                                                <label class="placeholder" for="poll_5_text">Введите значение</label>
+                                                <input type="text" name="poll_5_text" id="poll_5_text">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="poll-form-nav">
+                                    <div class="btn btn-2 btn-forward"><span>Далее</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="poll-form-step">
+                              <div class="poll-step-content">
+                                <div class="poll-step-content-inner">
+                                  <div class="poll-step-num"><span class="cur">02</span> <span class="sep">/</span> <span class="total">08</span></div>
+                                  <div class="poll-question">
+                                    <div class="h3">Второй вопрос, обязательные чекбоксы</div>
+                                    <div class="form-checkboxes form-checkboxes-required">
+                                      <div class="row">
+                                        <div class="col">
+                                          <div class="form-checkbox">
+                                            <input id="poll_2_1" type="checkbox" name="poll_2_1">
+                                            <label for="poll_2_1">Вариант ответа 1</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-checkbox">
+                                            <input id="poll_2_2" type="checkbox" name="poll_2_2">
+                                            <label for="poll_2_2">Вариант ответа 2 с очень длинным вопросом</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-checkbox">
+                                            <input id="poll_2_3" type="checkbox" name="poll_2_3">
+                                            <label for="poll_2_3">В&nbsp;разработке (продукт не&nbsp;готов к&nbsp;продажам)</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-checkbox">
+                                            <input id="poll_2_4" type="checkbox" name="poll_2_4">
+                                            <label for="poll_2_4">Минимальная версия продукта (MVP) готова, продажи не&nbsp;начаты</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-checkbox-text">
+                                            <div class="form-checkbox">
+                                              <input id="poll_2_5" type="checkbox" name="poll_2_5" value="other">
+                                              <label for="poll_2_5">Другое</label>
+                                            </div>
+                                            <div class="form-text">
+                                              <div class="form-group form-group-alt form-group-other">
+                                                <label class="placeholder" for="poll_5_text">Введите значение</label>
+                                                <input type="text" name="poll_5_text" id="poll_5_text">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="poll-form-nav">
+                                    <div class="btn btn-3 btn-back"><span>Назад</span></div>
+                                    <div class="btn btn-2 btn-forward"><span>Далее</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="poll-form-step">
+                              <div class="poll-step-content">
+                                <div class="poll-step-content-inner">
+                                  <div class="poll-step-num"><span class="cur">03</span> <span class="sep">/</span> <span class="total">08</span></div>
+                                  <div class="poll-question">
+                                    <div class="h3">Первый вопрос, радиокнопки</div>
+                                    <div class="form-radios">
+                                      <div class="row">
+                                        <div class="col">
+                                          <div class="form-radio">
+                                            <input id="poll_3_1" type="radio" name="poll_3" checked>
+                                            <label for="poll_3_1">Вариант ответа 1</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-radio">
+                                            <input id="poll_3_2" type="radio" name="poll_3">
+                                            <label for="poll_3_2">Вариант ответа 2 с очень длинным вопросом</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-radio">
+                                            <input id="poll_3_3" type="radio" name="poll_3">
+                                            <label for="poll_3_3">В&nbsp;разработке (продукт не&nbsp;готов к&nbsp;продажам)</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-radio">
+                                            <input id="poll_3_4" type="radio" name="poll_3">
+                                            <label for="poll_3_4">Минимальная версия продукта (MVP) готова, продажи не&nbsp;начаты</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-radio-text">
+                                            <div class="form-radio">
+                                              <input id="poll_3_5" type="radio" name="poll_3" value="other">
+                                              <label for="poll_3_5">Другое</label>
+                                            </div>
+                                            <div class="form-text">
+                                              <div class="form-group form-group-alt form-group-other">
+                                                <label class="placeholder" for="poll_5_text">Введите значение</label>
+                                                <input type="text" name="poll_5_text" id="poll_5_text">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="poll-form-nav">
+                                    <div class="btn btn-3 btn-back"><span>Назад</span></div>
+                                    <div class="btn btn-2 btn-forward"><span>Далее</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="poll-form-step">
+                              <div class="poll-step-content">
+                                <div class="poll-step-content-inner">
+                                  <div class="poll-step-num"><span class="cur">04</span> <span class="sep">/</span> <span class="total">08</span></div>
+                                  <div class="poll-question">
+                                    <div class="h3">Второй вопрос, обязательные радиокнопки</div>
+                                    <div class="form-radios form-radios-required">
+                                      <div class="row">
+                                        <div class="col">
+                                          <div class="form-radio">
+                                            <input id="poll_4_1" type="radio" name="poll_4" checked>
+                                            <label for="poll_4_1">Вариант ответа 1</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-radio">
+                                            <input id="poll_4_2" type="radio" name="poll_4">
+                                            <label for="poll_4_2">Вариант ответа 2 с очень длинным вопросом</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-radio">
+                                            <input id="poll_4_3" type="radio" name="poll_4">
+                                            <label for="poll_4_3">В&nbsp;разработке (продукт не&nbsp;готов к&nbsp;продажам)</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-radio">
+                                            <input id="poll_4_4" type="radio" name="poll_4">
+                                            <label for="poll_4_4">Минимальная версия продукта (MVP) готова, продажи не&nbsp;начаты</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-radio-text">
+                                            <div class="form-radio">
+                                              <input id="poll_4_5" type="radio" name="poll_4" value="other">
+                                              <label for="poll_4_5">Другое</label>
+                                            </div>
+                                            <div class="form-text">
+                                              <div class="form-group form-group-alt form-group-other">
+                                                <label class="placeholder" for="poll_5_text">Введите значение</label>
+                                                <input type="text" name="poll_5_text" id="poll_5_text">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="poll-form-nav">
+                                    <div class="btn btn-3 btn-back"><span>Назад</span></div>
+                                    <div class="btn btn-2 btn-forward"><span>Далее</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="poll-form-step">
+                              <div class="poll-step-content">
+                                <div class="poll-step-content-inner">
+                                  <div class="poll-step-num"><span class="cur">06</span> <span class="sep">/</span> <span class="total">08</span></div>
+                                  <div class="poll-question">
+                                    <div class="h3">Текстовое поле</div>
+                                    <div class="row row-center">
+                                      <div class="col">
+                                        <div class="form-group form-group-alt">
+                                          <label class="placeholder" for="poll_text_1">Введите значение</label>
+                                          <input id="poll_text_1" type="text" name="poll_text_1" required>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="poll-form-nav">
+                                    <div class="btn btn-3 btn-back"><span>Назад</span></div>
+                                    <div class="btn btn-2 btn-forward"><span>Далее</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="poll-form-step">
+                              <div class="poll-step-content">
+                                <div class="poll-step-content-inner">
+                                  <div class="poll-step-num"><span class="cur">07</span> <span class="sep">/</span> <span class="total">08</span></div>
+                                  <div class="poll-question">
+                                    <div class="h3">Сообщение</div>
+                                    <div class="row row-center">
+                                      <div class="col">
+                                        <div class="form-group form-group-alt">
+                                          <label class="placeholder" for="poll_text_2">Введите значение</label>
+                                          <textarea class="textarea-autogrow" id="poll_text_2" name="poll_text_2" rows="1" required></textarea>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="poll-form-nav">
+                                    <div class="btn btn-3 btn-back"><span>Назад</span></div>
+                                    <div class="btn btn-2 btn-forward"><span>Далее</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="poll-form-step last">
+                              <div class="poll-step-content">
+                                <div class="poll-step-content-inner">
+                                  <div class="poll-step-num"><span class="cur">08</span> <span class="sep">/</span> <span class="total">08</span></div>
+                                  <div class="poll-question">
+                                    <div class="h3 h3-alt">Заполните форму</div>
+                                    <div class="row">
+                                      <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                          <label class="placeholder" for="poll_name">Ваше имя</label>
+                                          <input id="poll_name" type="text" name="poll_name" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-6">
+                                        <div class="form-group form-group-phone">
+                                          <label class="placeholder" for="poll_phone">Телефон</label>
+                                          <input class="input-phone" id="poll_phone" type="text" name="poll_phone" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-12">
+                                        <div class="form-agree">
+                                          <p>Нажимая кнопку “Отправить” Вы даете свое согласие с&nbsp;Политикой Конфиденциальности</p>
+                                        </div>
+                                      </div>
+                                      <div class="col-12">
+                                        <div class="poll-form-nav">
+                                          <div class="btn btn-3 btn-back"><span>Назад</span></div>
+                                          <button class="btn btn-2" type="submit"><span>Отправить</span></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Квиз END-->
+            <!-- Классы-->
+            <div class="section section-home section-classes">
+              <div class="section-content">
+                <div class="section-content-inner">
+                  <div class="container">
+                    <div class="section-header">
+                      <h2>Классы</h2>
+                    </div>
+                    <div class="classes-list-home">
+                      <div class="row">
+                        <div class="col-6 col-md-3"><a class="class-tmb-home" href="#">
+                            <div class="class-tmb-home-pic"><img src="files/class-home-1.jpg"></div>
+                            <div class="class-tmb-home-descr">
+                              <h3>Женские практики</h3>
+                            </div></a></div>
+                        <div class="col-6 col-md-3"><a class="class-tmb-home" href="#">
+                            <div class="class-tmb-home-pic"><img src="files/class-home-2.jpg"></div>
+                            <div class="class-tmb-home-descr">
+                              <h3>Инь-йога</h3>
+                            </div></a></div>
+                        <div class="col-6 col-md-3"><a class="class-tmb-home" href="#">
+                            <div class="class-tmb-home-pic"><img src="files/class-home-3.jpg"></div>
+                            <div class="class-tmb-home-descr">
+                              <h3>Хатха-йога</h3>
+                            </div></a></div>
+                        <div class="col-6 col-md-3"><a class="class-tmb-home" href="#">
+                            <div class="class-tmb-home-pic"><img src="files/class-home-4.jpg"></div>
+                            <div class="class-tmb-home-descr">
+                              <h3>Дживамукти йога</h3>
+                            </div></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Классы END-->
+            <!-- Ссылки-->
+            <div class="section section-home section-links">
+              <div class="section-content">
+                <div class="section-content-inner">
+                  <div class="container">
+                    <div class="home-links"><a class="home-link home-link-l" href="#">
+                        <div class="home-link-ttl">Классы<br>Move Studio</div>
+                        <div class="watch-link watch-link-r watch-link-alt">
+                          <div class="watch-link-ico"><img class="svg-inline" src="images/ico-timetable-link.svg"></div><span>Смотреть</span>
+                        </div></a><a class="home-link home-link-r" href="#">
+                        <div class="home-link-ttl">Расписание занятий</div>
+                        <div class="watch-link">
+                          <div class="watch-link-ico"><img class="svg-inline" src="images/ico-timetable-link.svg"></div><span>Смотреть</span>
+                        </div></a>
+                      <div class="home-links-logo"><img src="images/move-logo-w.svg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Ссылки END-->
+            <!-- Инструкторы-->
+            <div class="section section-home section-instructors">
+              <div class="section-content">
+                <div class="section-content-inner">
+                  <div class="container">
+                    <div class="section-header">
+                      <h2>Преподаватели</h2>
+                    </div>
+                    <div class="inst-list">
+                      <div class="row row-alt">
+                        <div class="col-12 col-lg-6">
+                          <div class="inst-tmb">
+                            <div class="inst-tmb-pic"><img src="files/inst-1.jpg"></div>
+                            <div class="inst-tmb-descr">
+                              <div class="inst-tmb-name">
+                                <p>Виктория барыкина</p>
+                              </div>
+                              <ul class="inst-classes">
+                                <li><a href="#">Аштанга-йога</a></li>
+                                <li><a href="#">женские практики</a></li>
+                              </ul>
+                              <p>На своих классах Вика старается создать мягкую атмосферу, несмотря на общую динамичность этого стиля. Дает человеку возможность ошибаться, просит больше думать о дыхании и не сравнивать себя с другими, наблюдая за собой и своими ощущениями. Мягкие, но глубокие правки Вики и медитативная шавасана под звуки поющих чаш никого еще не оставляли равнодушным.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                          <div class="inst-tmb">
+                            <div class="inst-tmb-pic"><img src="files/inst-2.jpg"></div>
+                            <div class="inst-tmb-descr">
+                              <div class="inst-tmb-name">
+                                <p>Виктория барыкина</p>
+                              </div>
+                              <ul class="inst-classes">
+                                <li><a href="#">Аштанга-йога</a></li>
+                              </ul>
+                              <p>Дает человеку возможность ошибаться, просит больше думать о дыхании и не сравнивать себя с другими, наблюдая за собой и своими ощущениями. Мягкие, но глубокие правки Вики и медитативная шавасана под звуки поющих чаш никого еще не оставляли равнодушным.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Инструкторы END-->
+            <!-- Онлайн-->
+            <div class="section section-home section-online">
+              <div class="section-content">
+                <div class="section-content-inner">
+                  <div class="container">
+                    <div class="online-wrapper">
+                      <div class="row">
+                        <div class="col-online col-online-l"><a class="online-link" href="#">
+                            <div class="online-link-pic"><img src="images/online-1.jpg" width="225"></div>
+                            <div class="online-link-ttl">
+                              <p>Посмотреть<br>наши видео уроки</p>
+                            </div>
+                            <div class="online-link-footer">
+                              <div class="watch-link watch-link-r">
+                                <div class="watch-link-ico"><img class="svg-inline" src="images/ico-timetable-link.svg"></div><span>Смотреть</span>
+                              </div>
+                            </div></a></div>
+                        <div class="col-online col-online-m">
+                          <div class="online-header">
+                            <div class="online-header-ttl">Занимайтесь с&nbsp;нами онлайн</div>
+                          </div>
+                        </div>
+                        <div class="col-online col-online-r"><a class="online-link" href="#">
+                            <div class="online-link-pic"><img src="images/online-2.jpg" width="227"></div>
+                            <div class="online-link-ttl">
+                              <p>Подписаться на&nbsp;онлайн-курс</p>
+                            </div>
+                            <div class="online-link-footer">
+                              <div class="watch-link">
+                                <div class="watch-link-ico"><img class="svg-inline" src="images/ico-timetable-link.svg"></div><span>Смотреть</span>
+                              </div>
+                            </div></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Онлайн END-->
+            <!-- Акции-->
+            <div class="section section-actions">
+              <div class="section-content">
+                <div class="section-content-inner">
+                  <div class="container">
+                    <div class="section-header">
+                      <h2>Вы у&nbsp;нас впервые?</h2>
+                      <div class="section-sub-ttl">Специальные условия для новичков</div>
+                    </div>
+                    <div class="slider-wrapper">
+                      <div class="slider slider-arrows-up actions-slider">
+                        <div class="slide">
+                          <div class="action-tmb"><img src="files/action-1.jpg"></div>
+                        </div>
+                        <div class="slide">
+                          <div class="action-tmb"><img src="files/action-2.jpg"></div>
+                        </div>
+                        <div class="slide">
+                          <div class="action-tmb"><img src="files/action-1.jpg"></div>
+                        </div>
+                        <div class="slide">
+                          <div class="action-tmb"><img src="files/action-2.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Акции END-->
+            <!-- Инстаграм-->
+            <div class="section section-instagram">
+              <div class="section-content">
+                <div class="section-content-inner">
+                  <div class="container">
+                    <div class="section-header">
+                      <h2>Move studio Instagram</h2>
+                    </div>
+                  </div>
+                  <div class="instagram-wrapper">
+                    <p>Плагин инстаграма</p>
+                  </div>
+                </div>
+              </div><a class="instagram-link" href="#"></a>
+            </div>
+            <!-- Инстаграм END-->
+            <!-- Контакты-->
+            <div class="section section-contacts">
+              <div class="section-content">
+                <div class="section-content-inner">
+                  <div class="container">
+                    <div class="contacts-descr">
+                      <div class="section-header">
+                        <h2>Контакты</h2>
+                      </div>
+                      <div class="contacts-items">
+                        <div class="contacts-item">
+                          <div class="contacts-item-pic"><img src="images/ico-contacts-phone.svg"></div>
+                          <div class="contacts-item-descr">
+                            <div class="contacts-phone"><a href="tel: +7 (911) 837-42-27">+7 (911) 837-42-27</a></div>
+                            <div class="contacts-timetable">
+                              <p>работаем ежедневно с&nbsp;9:00 до&nbsp;22:00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="contacts-item">
+                          <div class="contacts-item-pic"><img src="images/ico-contacts-address.svg"></div>
+                          <div class="contacts-item-descr">
+                            <p>Москва, ул. Название улицы, 22, дом 33</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="contacts-button"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#registerModal">Пробное занятие</a></div>
+                    </div>
+                    <div class="contacts-map" id="contactsMap"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Контакты END-->
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-soclinks-wrapper">
+              <div class="footer-soclinks"><a class="soclink" href="#"><img class="svg-inline" src="images/soclink-vk.svg"></a><a class="soclink" href="#"><img class="svg-inline" src="images/soclink-fb.svg"></a><a class="soclink" href="#"><img class="svg-inline" src="images/soclink-instagram.svg"></a></div>
+            </div>
+            <div class="footer-copy">
+              <p>&copy; Move Studio — Move your body and soul. 2020</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade form-modal" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close-modal.svg"></button>
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="h2">Запись на&nbsp;пробное занятие</div>
+              </div>
+              <div class="modal-body">
+                <div class="modal-form">
+                  <form>
+                    <input type="hidden" id="register_class" name="register_class">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="register_name">Ваше имя</label>
+                          <input type="text" name="register_name" id="register_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="register_phone">Телефон</label>
+                          <input class="input-phone" type="text" name="register_phone" id="register_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, Вы даете свое согласие с&nbsp;<a href="#">Политикой Конфиденциальности</a></p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="ticketModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close-modal.svg"></button>
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="h2">Заказать абонемент</div>
+              </div>
+              <div class="modal-body">
+                <div class="modal-form">
+                  <form>
+                    <input type="hidden" id="ticket_class" name="ticket_class">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="ticket_name">Ваше имя</label>
+                          <input type="text" name="ticket_name" id="ticket_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="ticket_phone">Телефон</label>
+                          <input class="input-phone" type="text" name="ticket_phone" id="ticket_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, Вы даете свое согласие с&nbsp;<a href="#">Политикой Конфиденциальности</a></p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="zoomModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close-modal.svg"></button>
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="h2">Заказать абонемент</div>
+              </div>
+              <div class="modal-body">
+                <div class="modal-form">
+                  <form>
+                    <input type="hidden" id="zoom_class" name="zoom_class">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="zoom_name">Ваше имя</label>
+                          <input type="text" name="zoom_name" id="zoom_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="zoom_phone">Телефон</label>
+                          <input class="input-phone" type="text" name="zoom_phone" id="zoom_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, Вы даете свое согласие с&nbsp;<a href="#">Политикой Конфиденциальности</a></p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="callbackModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close-modal.svg"></button>
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="h2">Заказ обратного звонка</div>
+              </div>
+              <div class="modal-body">
+                <div class="modal-form">
+                  <form>
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="callback_name">Ваше имя</label>
+                          <input type="text" name="callback_name" id="callback_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="callback_phone">Телефон</label>
+                          <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, Вы даете свое согласие с&nbsp;<a href="#">Политикой Конфиденциальности</a></p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade success-modal" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close-modal.svg"></button>
+            <div class="modal-header">
+              <div class="h2"><span>Ваша заявка успешно принята!</span></div>
+            </div>
+            <div class="modal-body">
+              <div class="text">
+                <p>Перезвоним в течение 15 минут</p>
+              </div>
+              <div class="success-modal-button">
+                <button class="btn btn-1" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="js/greensock/TweenMax.min.js"></script>
+      <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+      <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+      <script src="js/iscroll-probe.js"></script>
+      <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+      <script src="js/jquery.mousewheel.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="js/main.js"></script>
+      <script src="js/animations.js"></script>
+    </div>
+  </body>
+</html>

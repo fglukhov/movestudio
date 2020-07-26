@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Move Studio</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+  </head>
+  <body>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="sm-indicator"></div>
+      <header>
+        <div class="container">
+          <div class="header-content">
+            <div class="header-logo"><a href="#"><img src="images/logo.svg"></a></div>
+            <div class="header-top">
+              <div class="row">
+                <div class="header-col header-col-top-l">
+                  <div class="header-register"><a class="btn-order" href="#" data-toggle="modal" data-target="#registerModal">Пробное занятие</a></div>
+                </div>
+                <div class="header-col header-col-top-r">
+                  <div class="header-controls">
+                    <div class="row">
+                      <div class="header-controls-l">
+                        <div class="header-lang">
+                          <ul class="lang-selector">
+                            <li><a href="#">en</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="header-controls-r">
+                        <div class="header-contacts">
+                          <div class="header-button"><a class="btn-inline" href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a></div>
+                          <div class="header-phone"><a href="tel: +7 (495) 111-11-11">+7 (495) 111-11-11</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-bottom">
+              <div class="navbar-trigger"><span></span><span></span><span></span></div>
+              <div class="navbar-wrapper">
+                <div class="row">
+                  <div class="header-col navbar-col-l">
+                    <ul class="nav navbar-nav">
+                      <li data-submenu="#submenuAbout"><a href="#">О&nbsp;нас</a></li>
+                      <li data-submenu="#submenuClasses"><a href="#">Классы</a></li>
+                      <li><a href="#">Преподаватели</a></li>
+                    </ul>
+                  </div>
+                  <div class="header-col navbar-col-r">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#">Расписание</a></li>
+                      <li><a href="#">Цены</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header-contacts header-contacts-mob">
+                  <div class="header-button"><a class="btn-inline" href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a></div>
+                  <div class="header-phone"><a href="tel: +7 (495) 111-11-11">+7 (495) 111-11-11</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="submenu" id="submenuAbout">
+          <div class="container">
+            <ul class="classes-menu">
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-1.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>О студии</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-2.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Блог</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-3.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Видео уроки</p>
+                  </div></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="submenu" id="submenuClasses">
+          <div class="container">
+            <ul class="classes-menu">
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-1.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Женские практики</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-2.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Инь-йога</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-3.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Хатха-йога</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="class-menu-pic"><img src="files/class-menu-4.jpg"></div>
+                  <div class="class-menu-descr">
+                    <p>Дживамукти йога</p>
+                  </div></a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="page-wrapper">
+          <div class="page-header" style="background-image: url(files/page-header-instructors.jpg);">
+            <div class="page-header-inner">
+              <div class="container">
+                <ul class="breadcrumb">
+                  <li><a href="#">Главная</a></li>
+                  <li><span>Классы</span></li>
+                </ul>
+                <h1>Классы</h1>
+              </div>
+            </div>
+          </div>
+          <div class="page-body">
+            <div class="page-content">
+              <div class="container">
+                <div class="classes-list">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="class-tmb">
+                        <div class="class-tmb-pic"><img src="files/class-tmb-1.jpg"></div>
+                        <div class="class-tmb-descr">
+                          <h3>Женские практики</h3>
+                          <h4>О классе</h4>
+                          <p>Дает человеку возможность ошибаться, просит больше думать о дыхании и не сравнивать себя с другими, наблюдая за собой и своими ощущениями.</p>
+                          <h4>Эффект занятий</h4>
+                          <ul>
+                            <li>Мягкие, но глубокие правки Вики и медитативная шавасана под звуки поющих чаш никого еще не оставляли равнодушным.</li>
+                            <li>Дает человеку возможность ошибаться, просит больше думать о дыхании и не сравнивать себя с другими, наблюдая за собой и своими ощущениями.</li>
+                          </ul>
+                          <div class="class-tmb-button"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#registerModal">Пробное занятие</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="class-tmb">
+                        <div class="class-tmb-pic"><img src="files/class-tmb-1.jpg"></div>
+                        <div class="class-tmb-descr">
+                          <h3>Инь-йога</h3>
+                          <h4>О классе</h4>
+                          <p>Дает человеку возможность ошибаться, просит больше думать о дыхании и не сравнивать себя с другими, наблюдая за собой и своими ощущениями.</p>
+                          <h4>Эффект занятий</h4>
+                          <ul>
+                            <li>Мягкие, но глубокие правки Вики и медитативная шавасана под звуки поющих чаш никого еще не оставляли равнодушным.</li>
+                            <li>Дает человеку возможность ошибаться, просит больше думать о дыхании и не сравнивать себя с другими, наблюдая за собой и своими ощущениями.</li>
+                          </ul>
+                          <div class="class-tmb-button"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#registerModal">Пробное занятие</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="class-tmb">
+                        <div class="class-tmb-pic"><img src="files/class-tmb-1.jpg"></div>
+                        <div class="class-tmb-descr">
+                          <h3>Дживамукти-йога</h3>
+                          <h4>О классе</h4>
+                          <p>Дает человеку возможность ошибаться, просит больше думать о дыхании и не сравнивать себя с другими, наблюдая за собой и своими ощущениями.</p>
+                          <h4>Эффект занятий</h4>
+                          <ul>
+                            <li>Мягкие, но глубокие правки Вики и медитативная шавасана под звуки поющих чаш никого еще не оставляли равнодушным.</li>
+                            <li>Дает человеку возможность ошибаться, просит больше думать о дыхании и не сравнивать себя с другими, наблюдая за собой и своими ощущениями.</li>
+                          </ul>
+                          <div class="class-tmb-button"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#registerModal">Пробное занятие</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="class-tmb">
+                        <div class="class-tmb-pic"><img src="files/class-tmb-1.jpg"></div>
+                        <div class="class-tmb-descr">
+                          <h3>Хатха-йога</h3>
+                          <h4>О классе</h4>
+                          <p>Дает человеку возможность ошибаться, просит больше думать о дыхании и не сравнивать себя с другими, наблюдая за собой и своими ощущениями.</p>
+                          <h4>Эффект занятий</h4>
+                          <ul>
+                            <li>Мягкие, но глубокие правки Вики и медитативная шавасана под звуки поющих чаш никого еще не оставляли равнодушным.</li>
+                            <li>Дает человеку возможность ошибаться, просит больше думать о дыхании и не сравнивать себя с другими, наблюдая за собой и своими ощущениями.</li>
+                          </ul>
+                          <div class="class-tmb-button"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#registerModal">Пробное занятие</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section section-timetable">
+              <div class="section-content">
+                <div class="section-content-inner">
+                  <div class="container"><a class="timetable-link" href="#">
+                      <h3>Расписание<br>занятий</h3>
+                      <div class="timetable-link-button">
+                        <div class="timetable-link-ico"><img class="svg-inline" src="images/ico-timetable-link.svg"></div><span>Смотреть</span>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-soclinks-wrapper">
+              <div class="footer-soclinks"><a class="soclink" href="#"><img class="svg-inline" src="images/soclink-vk.svg"></a><a class="soclink" href="#"><img class="svg-inline" src="images/soclink-fb.svg"></a><a class="soclink" href="#"><img class="svg-inline" src="images/soclink-instagram.svg"></a></div>
+            </div>
+            <div class="footer-copy">
+              <p>&copy; Move Studio — Move your body and soul. 2020</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade form-modal" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close-modal.svg"></button>
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="h2">Запись на&nbsp;пробное занятие</div>
+              </div>
+              <div class="modal-body">
+                <div class="modal-form">
+                  <form>
+                    <input type="hidden" id="register_class" name="register_class">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="register_name">Ваше имя</label>
+                          <input type="text" name="register_name" id="register_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="register_phone">Телефон</label>
+                          <input class="input-phone" type="text" name="register_phone" id="register_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, Вы даете свое согласие с&nbsp;<a href="#">Политикой Конфиденциальности</a></p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="ticketModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close-modal.svg"></button>
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="h2">Заказать абонемент</div>
+              </div>
+              <div class="modal-body">
+                <div class="modal-form">
+                  <form>
+                    <input type="hidden" id="ticket_class" name="ticket_class">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="ticket_name">Ваше имя</label>
+                          <input type="text" name="ticket_name" id="ticket_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="ticket_phone">Телефон</label>
+                          <input class="input-phone" type="text" name="ticket_phone" id="ticket_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, Вы даете свое согласие с&nbsp;<a href="#">Политикой Конфиденциальности</a></p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="zoomModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close-modal.svg"></button>
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="h2">Заказать абонемент</div>
+              </div>
+              <div class="modal-body">
+                <div class="modal-form">
+                  <form>
+                    <input type="hidden" id="zoom_class" name="zoom_class">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="zoom_name">Ваше имя</label>
+                          <input type="text" name="zoom_name" id="zoom_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="zoom_phone">Телефон</label>
+                          <input class="input-phone" type="text" name="zoom_phone" id="zoom_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, Вы даете свое согласие с&nbsp;<a href="#">Политикой Конфиденциальности</a></p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="callbackModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close-modal.svg"></button>
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="h2">Заказ обратного звонка</div>
+              </div>
+              <div class="modal-body">
+                <div class="modal-form">
+                  <form>
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="callback_name">Ваше имя</label>
+                          <input type="text" name="callback_name" id="callback_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="callback_phone">Телефон</label>
+                          <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, Вы даете свое согласие с&nbsp;<a href="#">Политикой Конфиденциальности</a></p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade success-modal" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close-modal.svg"></button>
+            <div class="modal-header">
+              <div class="h2"><span>Ваша заявка успешно принята!</span></div>
+            </div>
+            <div class="modal-body">
+              <div class="text">
+                <p>Перезвоним в течение 15 минут</p>
+              </div>
+              <div class="success-modal-button">
+                <button class="btn btn-1" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="js/greensock/TweenMax.min.js"></script>
+      <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+      <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+      <script src="js/iscroll-probe.js"></script>
+      <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+      <script src="js/jquery.mousewheel.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="js/main.js"></script>
+      <script src="js/animations.js"></script>
+    </div>
+  </body>
+</html>
